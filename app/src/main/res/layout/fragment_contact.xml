@@ -34,5 +34,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/surnameTextView" />
 
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="176dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactTextView"
+        app:srcCompat="@android:drawable/ic_menu_report_image"
+        tools:ignore="ImageContrastCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

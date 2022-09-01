@@ -6,7 +6,7 @@ class ContactListViewModel: ViewModel() {
     val contacts = mutableListOf<Contact>()
 
     init {
-        for (i in 0 until 4){
+        for (i in 0 until 100){
             val contact = Contact()
             contact.name = "Contact #$i"
             contacts += contact
