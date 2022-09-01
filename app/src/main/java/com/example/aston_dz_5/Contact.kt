@@ -1,11 +1,18 @@
 package com.example.aston_dz_5
 
+import android.widget.ImageView
+import com.bumptech.glide.Glide
+import java.time.temporal.TemporalAdjusters.next
 import java.util.*
+import kotlin.random.Random.Default.nextInt
+import kotlin.random.nextInt
 
-data class Contact(val id: UUID = UUID.randomUUID(),
+
+class Contact(val id: UUID = UUID.randomUUID(),
                    var name: String = "Vladimir",
                    var surName:String = "asf",
-                   var phone: String = "89013457123"){
+                   var phone: String = "89013457123",
+                   var imageView: ImageView? = null){
 
     init {
         setRandomName()
@@ -53,6 +60,11 @@ data class Contact(val id: UUID = UUID.randomUUID(),
 
 
     }
+
+
+
+
+
 
 
 }
